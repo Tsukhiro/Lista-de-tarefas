@@ -3,6 +3,8 @@
 
 > Previw do projeto.
 
+Link do projeto para uso: https://lista-tarefas.netlify.app/
+
 ![Print-Project](https://user-images.githubusercontent.com/89936463/152390532-6029bde8-93cc-46ec-8468-32d83a8a5e34.PNG)
 
 

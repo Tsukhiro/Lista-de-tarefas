@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+h1 {
+    color: cornflowerblue;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#botao-adicionar {
+    background: #8052EC;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding:  0 15px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+#botao-adicionar:hover{
+    opacity: 0.8;
+}
+
+#botao-adicionar:active{
+    opacity: 0.6;
+}
+
+.container {
+    background: white;
+    width: 541px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#input-principal {
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(148,187,233,1);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.item-tarefa{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 45px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.nome-tarefa{
+    color: black;
+    font-size: 15px;
+}
+
+.botao-delete{
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.check{
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-check{
+    color: green;
+}
+
+.item-tarefa:hover .botao-delete{
+    opacity: 1;
+}
+
+.item-tarefa:hover .check{
+    opacity: 1;
+}
+
+.concluido{
+    background-color: greenyellow;
+    text-decoration: line-through;
+}
